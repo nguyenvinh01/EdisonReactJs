@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#about-us{
+    text-align: center;
+    background-color: #474E5D;
+    color: #fff;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+}
+#about-us p{
+    margin: 7px; 
+    font-size: 17px;
+}
+.perfect-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+img{
+    width: 100%;
+}
+#our-team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    flex-basis: 30%;
+    padding: 10px 0px;
+}
+#our-team h2{
+    padding-bottom: 20px;
+}
+#team-tag{
+    display: flex;
+    justify-content: space-between;
+}
+
+#tag{
+    margin: 0px 17px;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+#desc{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+#desc p{
+    margin: 10px 0px;
+}
+.sub{
+    color: gray;
+}
+#btn-contact{
+    color: #fff;
+    background-color: #000;
+    padding: 10px;
+    text-align: center;
+    border: none;
+}
+#btn-contact:hover{
+    background-color: #555;
+    cursor: pointer;
+}
