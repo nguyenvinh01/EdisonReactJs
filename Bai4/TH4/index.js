@@ -1,15 +1,13 @@
 function calculate() {
 
-    let amount = prompt("Enter amount");
+    let amount = prompt("Khoản vay");
     
-    let rate = prompt("Enter interest rate (%)");
+    let rate = prompt("Lãi suất (%)");
     
-    let months = prompt("Enter months to pay");
-    // Tính lái suất hàng tháng
+    let months = prompt("Thời gian trả(tháng)");
     const interest = (amount * (rate * 0.01)) / months;
-    // Tính tổng tiền phải trả một tháng
+
     const total = ((amount / months) + interest).toFixed(2);
     
-    // Alert kết quả
     alert("EMI: " + total);
     }
