@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #scrollDemo {
+        height: 200px;
+        width: 200px;
+        overflow: auto;
+        background-color: #f0db4f
+        }
+        
+        #scrollDemo p {
+        height: 300px;
+        width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="scrollDemo">
+        <p>JS Scroll Event Demo</p>
+    </div>
+        
+    <div id="control">
+        <button id="btnScrollLeft">Scroll Left</button>
+        <button id="btnScrollTop">Scroll Top</button>
+    </div>
+    <script>
+        var control = document.getElementById("control")
+        control.addEventListener('click',function(event){
+            let div = document.getElementById("scrollDemo")
+            let target = event.target;
+            console.log(control);
+            switch (target.id) {
+                case 'btnScrollLeft':
+                    div.scrollLeft += 20;
+                    break;
+                case 'btnScrollTop':
+                    div.scrollTop += 20;
+                    break;
+                default:
+                    break;
+            }
+        })
+    </script>
+</body>
+</html>
