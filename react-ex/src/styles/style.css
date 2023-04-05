@@ -1,0 +1,7 @@
+.images {
+    height: 1000px;
+    width: 1000px;
+    border-radius: 20px;
+    background-image: url('../../src/assets/download.jpg');
+    background-repeat: no-repeat;
+}
