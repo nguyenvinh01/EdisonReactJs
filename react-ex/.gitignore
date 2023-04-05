@@ -7,7 +7,6 @@
 
 # testing
 /coverage
-/src/Bai10
 # production
 /build
 
