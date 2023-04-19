@@ -8,11 +8,15 @@ import TH4 from './Bai10/TH4/Th4';
 import BT1 from './Bai12/BT1/BT1';
 import BT2 from './Bai12/BT2/BT2';
 import B12Test from './Bai12/Testuse/test';
+import { RouterProvider } from 'react-router-dom';
+import router from './Router';
 function App() {
   return (
-    <div className="App">
-      <BT1 />
-    </div>
+    <RouterProvider
+      router={router}
+    >
+      <cHook />
+    </RouterProvider>
   );
 }
 
